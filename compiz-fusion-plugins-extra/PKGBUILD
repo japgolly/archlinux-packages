@@ -15,12 +15,15 @@ makedepends=('intltool' 'pkg-config' 'gettext' 'gconf')
 groups=('compiz-fusion' 'compiz-fusion-gtk' 'compiz-fusion-kde')
 conflicts=('compiz-fusion-plugins-extra-git')
 options=('!libtool')
-source=(http://releases.compiz.org/${pkgver}/compiz-plugins-extra-${pkgver}.tar.bz2)
-sha1sums=('ce592993696c0b5d4e0bb13171897b4c25b3844e')
+source=(
+  notification.patch
+  http://releases.compiz.org/${pkgver}/compiz-plugins-extra-${pkgver}.tar.bz2)
+sha1sums=('11ea02ce12711df9f5e306d96036a7d4b1c4a217' 'ce592993696c0b5d4e0bb13171897b4c25b3844e')
 
 build() {
   cd "${srcdir}/compiz-plugins-extra-${pkgver}"
 
+  patch -p1 -i $srcdir/notification.patch
   sed -i 's/if text "x$use/if test "x$use/' configure
   sed -i 's/iconUri, NULL);/iconUri);/' src/notification/notification.c
   ./configure --prefix=/usr
