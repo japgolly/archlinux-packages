@@ -14,7 +14,7 @@ depends=('compiz-core>=0.8.4' 'compizconfig-python>=0.8.4' 'pygtk')
 makedepends=('intltool')
 groups=('compiz-fusion' 'compiz-fusion-gtk' 'compiz-fusion-kde')
 conflicts=('ccsm-git')
-source=(http://releases.compiz-fusion.org/${pkgver}/${pkgname}-${pkgver}.tar.bz2)
+source=(http://releases.compiz.org/${pkgver}/${pkgname}-${pkgver}.tar.bz2)
 install=ccsm.install
 md5sums=('6bad7a02a91cc8fc9c4c48f83e91c08c')
 
