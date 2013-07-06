@@ -15,7 +15,7 @@ makedepends=('intltool' 'pkg-config' 'gettext' 'gconf')
 groups=('compiz-fusion' 'compiz-fusion-gtk' 'compiz-fusion-kde')
 conflicts=('compiz-fusion-plugins-extra-git')
 options=('!libtool')
-source=(http://releases.compiz-fusion.org/${pkgver}/compiz-plugins-extra-${pkgver}.tar.bz2)
+source=(http://releases.compiz.org/${pkgver}/compiz-plugins-extra-${pkgver}.tar.bz2)
 sha1sums=('ce592993696c0b5d4e0bb13171897b4c25b3844e')
 
 build() {

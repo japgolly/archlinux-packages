@@ -15,7 +15,7 @@ depends=('compiz-core' 'libjpeg>=7' 'librsvg' 'compiz-bcop' 'libxdamage' 'libxco
 makedepends=('intltool' 'pkgconfig' 'gettext')
 groups=('compiz-fusion' 'compiz-fusion-kde' 'compiz-fusion-gtk')
 conflicts=('compiz-fusion-plugins-main-git')
-source=(http://releases.compiz-fusion.org/${pkgver}/compiz-plugins-main-${pkgver}.tar.bz2)
+source=(http://releases.compiz.org/${pkgver}/compiz-plugins-main-${pkgver}.tar.bz2)
 options=(!libtool)
 sha1sums=('3c99841b744ae6c4a3edf2019626484880607dc6')
 

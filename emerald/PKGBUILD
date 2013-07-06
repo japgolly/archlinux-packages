@@ -17,7 +17,7 @@ groups=('compiz-fusion' 'compiz-fusion-kde' 'compiz-fusion-gtk')
 options=(!libtool)
 conflicts=('emerald-git')
 install=emerald.install
-source=(http://releases.compiz-fusion.org/${pkgver}/${pkgname}-${pkgver}.tar.bz2)
+source=(http://releases.compiz.org/${pkgver}/${pkgname}-${pkgver}.tar.bz2)
 sha1sums=('a5deb2ae135d1c4dac7b57b2a0415f320ae7c0aa')
 
 build() {
